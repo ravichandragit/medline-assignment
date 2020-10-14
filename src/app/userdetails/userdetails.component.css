@@ -69,3 +69,9 @@ form button[type="submit"]{
 .model-dialogbox .ok{
     margin-left: 120px;
 }
+@media screen and (min-width:769px){
+
+.form-row-mr-10{
+    margin-right: 10rem;
+}
+}

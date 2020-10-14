@@ -17,7 +17,6 @@ export class UserdetailsComponent implements OnInit {
   }
 
   onuserSubmit(frm : NgForm){
-    console.log(frm.value);
     this.hidepopup = false;
   }
 

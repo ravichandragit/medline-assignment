@@ -5,14 +5,14 @@
 <div class="userinfo h6 text-uppercase">
     user information
 </div>
-<div hidden class="alert alert-danger rounded-0" role="alert">
+<div [hidden]="!(frm.touched && (firstname.invalid || lastname.invalid || phone.invalid || email.invalid))" class="alert alert-danger rounded-0" role="alert">
     Please review errors.
 </div>
 <div class="text-uppercase h6 userinfo2 mb-3">
     user information
 </div>
-<form #frm="ngForm" (submit)="onuserSubmit(frm)" class="clearfix mr-md-5">
-    <div class="form-row">
+<form #frm="ngForm" (submit)="onuserSubmit(frm)" class="clearfix">
+    <div class="form-row form-row-mr-10">
         <div class="col-md-6 form-group">
             <label for="">First Name<span>*</span></label>
             <input type="text" class="form-control" required name="firstname" #firstname="ngModel" ngModel id="" placeholder="">
@@ -32,7 +32,7 @@
             </div>
         </div>
     </div>
-    <div class="form-row">
+    <div class="form-row form-row-mr-10">
         <div class="col-md-4 form-group">
             <label for="">Phone<span>*</span></label>
             <input type="number" class="form-control" required name="phone" #phone="ngModel" ngModel id="" placeholder="">
@@ -47,7 +47,7 @@
             <input type="text" class="form-control" id="" name="phoneext" ngModel placeholder="">
         </div>
     </div>
-    <div class="form-row">
+    <div class="form-row form-row-mr-10">
         <div class="col-md-6 form-group">
             <label for="">Email<span>*</span></label>
             <input type="email" class="form-control" required id="" #email="ngModel" name="email" ngModel placeholder="">
