@@ -1,0 +1,26 @@
+form input{
+    border-radius: 0;
+}
+form label{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+form small{
+    color:#f00;
+}
+form small svg{
+margin-right: 0.3rem;
+}
+form button[type="submit"]{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.userinfo{
+    border-bottom: 1px solid #cccccc;
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+}
+.userinfo2{
+    color: #1C56B9;
+}
