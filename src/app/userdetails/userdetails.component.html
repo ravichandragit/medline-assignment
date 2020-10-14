@@ -72,6 +72,6 @@
         <p><span>Username </span>{{frm.value.firstname}} {{frm.value.lastname}}</p>
         <p><span>Phone </span> {{frm.value.phone}}</p>
         <p><span>Email</span> {{frm.value.email}}</p>
-        <button (click)="onOkclick()" class="ok btn btn-success rounded-0 px-4">Ok</button>
+        <button [routerLink]="['thankyou']" class="ok btn btn-success rounded-0 px-4">Ok</button>
     </div>
 </div>
