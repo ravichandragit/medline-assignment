@@ -9,6 +9,7 @@ import { NgForm } from '@angular/forms'
 export class UserdetailsComponent implements OnInit {
 
   firstname:string;
+  hidepopup:boolean = true;
 
   constructor() { }
 
@@ -17,6 +18,15 @@ export class UserdetailsComponent implements OnInit {
 
   onuserSubmit(frm : NgForm){
     console.log(frm.value);
+    this.hidepopup = false;
+  }
+
+  onOkclick(){
+    // redirect to thank you page
+  }
+
+  onPopupClose(){
+    this.hidepopup = true;
   }
 
 }
